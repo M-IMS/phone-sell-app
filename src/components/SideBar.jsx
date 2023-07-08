@@ -15,8 +15,9 @@ const SideBar = () => {
         <CardHeader shadow={false} floated={false} className="h-96">
           <img
             src="https://images.unsplash.com/photo-1680687688158-e9165395ff00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
-            className="w-full h-full object-cover"
+            alt="" className="w-full h-full object-cover"
           />
+          
         </CardHeader>
         <CardBody>
           <div className="flex items-center justify-between mb-2">
