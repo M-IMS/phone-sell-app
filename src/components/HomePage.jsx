@@ -1,4 +1,7 @@
 import React from "react";
+
+import { ProductArray } from "./ProductArray";
+
 import {
   Radio,
   Typography,
@@ -16,13 +19,14 @@ const HomePage = () => {
         <h1 className="text-3xl mb-8">Base Configuration</h1>
 
         <div className="md:grid grid-cols-2 gap-8">
-          <div className="w-72">
+          <div className="w-52 md:w-72">
+          <h1 className="text-xl font-semibold mb-2">
+              1. Select your device Model.
+            </h1>
             <Select label="Select Model">
-              <Option>iPhone 14</Option>
-              <Option>iPhone 14 plus</Option>
-              <Option>iPhone 14 pro</Option>
-              <Option>iPhone 14 pro max</Option>
-              <Option>iPhone SE (3rd Gen)</Option>
+              {ProductArray.map((product, idx) => (
+                <Option>{product.title}</Option>
+              ))}
             </Select>
           </div>
           <div className="mb-8">
@@ -63,7 +67,7 @@ const HomePage = () => {
               3. Your device ROM capacity?*
             </h1>
             <p className="text-sm">Please select from the options below.</p>
-            <div className="text-lg pt-2 grid grid-cols-3">
+            <div className="text-lg pt-2 grid grid-cols-2 md:grid-cols-3">
               <Radio
                 name="type"
                 label={
@@ -487,7 +491,7 @@ const HomePage = () => {
             Please select the problems only that your phone has from the
             following (you can select multiple options if necessary))
           </p>
-          <div className="flex flex-col text-lg pt-2">
+          <div className="grid md:grid-cols-2 text-lg pt-2">
             <Checkbox
               label={
                 <Typography color="blue-gray" className="font-medium">
