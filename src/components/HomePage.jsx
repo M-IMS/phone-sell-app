@@ -13,14 +13,14 @@ import {
 
 const HomePage = () => {
   return (
-    <div className="md:m-8 w-[60%]">
+    <div className="w-full">
       {/* Phone Base Configuration */}
       <div className="shadow-md p-4 mb-8">
         <h1 className="text-3xl mb-8">Base Configuration</h1>
 
-        <div className="md:grid grid-cols-2 gap-8">
-          <div className="w-52 md:w-72">
-          <h1 className="text-xl font-semibold mb-2">
+        <div className="md:grid lg:grid-cols-2 gap-8">
+          <div className="w-full md:w-72 mb-8">
+            <h1 className="text-xl font-semibold mb-2">
               1. Select your device Model.
             </h1>
             <Select label="Select Model">
@@ -67,7 +67,7 @@ const HomePage = () => {
               3. Your device ROM capacity?*
             </h1>
             <p className="text-sm">Please select from the options below.</p>
-            <div className="text-lg pt-2 grid grid-cols-2 md:grid-cols-3">
+            <div className="text-lg pt-2 grid grid-cols-2 xl:grid-cols-3">
               <Radio
                 name="type"
                 label={
@@ -215,7 +215,7 @@ const HomePage = () => {
       <div className="shadow-md p-4 ">
         <h1 className="text-3xl mb-8">General Evaluation</h1>
 
-        <div className="md:grid grid-cols-2 gap-8">
+        <div className="md:grid lg:grid-cols-2 gap-8">
           <div className="mb-8">
             <h1 className="text-xl font-semibold">
               1. Tell us what you don't have with your phone.
@@ -368,7 +368,7 @@ const HomePage = () => {
       {/* Screen & Body Condition */}
       <div className="shadow-md p-4 my-8">
         <h1 className="text-3xl mb-8">Screen & Body Condition</h1>
-        <div className="md:grid grid-cols-2 gap-8">
+        <div className="md:grid lg:grid-cols-2 gap-8">
           <div className="mb-8">
             <h1 className="text-xl font-semibold">
               1. How's your phone screen's physical condition?*

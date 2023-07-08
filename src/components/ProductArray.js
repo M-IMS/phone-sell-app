@@ -36,15 +36,6 @@ const ProductArray = [
   },
 ];
 
-// function getProductData(id) {
-//   let ProductData = ProductArray.find((product) => product.id === id);
 
-//   if (ProductData === undefined) {
-//     console.log("Product data dose not exist for ID: " + id);
-//     return undefined;
-//   }
-
-//   return { ProductData, getProductData };
-// }
 
 export { ProductArray };
